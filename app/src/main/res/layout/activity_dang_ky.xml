@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebkg"
+    tools:context=".DangKyActivity">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:background="@drawable/white_box"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/dangky"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtdkTaikhoan"
+            android:drawableEnd="@drawable/baseline_account_circle_24"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:hint="Tài khoản"
+            android:paddingStart="10dp"
+            android:inputType="text"
+            android:paddingEnd="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtdkMatkhau"
+            android:drawableEnd="@drawable/baseline_lock_24"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:paddingStart="10dp"
+            android:hint="Mật khẩu"
+            android:paddingEnd="10dp"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtdkEmail"
+            android:drawableEnd="@drawable/baseline_email_24"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:paddingStart="10dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/dangkyy" />
+
+        <Button
+            android:id="@+id/trovedn_btn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/trovedangnhap" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
